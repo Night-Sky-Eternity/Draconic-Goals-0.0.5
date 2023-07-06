@@ -2,6 +2,7 @@
 logs
 local
 saves
+crash-reports
 
 patchouli_data.json
 options.txt
@@ -53,7 +54,6 @@ config/sidebar_buttons.json
 config/storagedrawers-client.toml
 config/storagedrawers-common.toml
 config/theoneprobe-client.toml
-config/theoneprobe-common.toml
 config/topaddons-client.toml
 config/topaddons-common.toml
 config/voicechat-client.toml
