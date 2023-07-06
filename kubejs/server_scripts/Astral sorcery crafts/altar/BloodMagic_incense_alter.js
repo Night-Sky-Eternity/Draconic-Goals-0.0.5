@@ -1,40 +1,41 @@
 onEvent("recipes", (event) => {
-    event.remove({ output: "bloodmagic:alchemytable" });
+    event.remove({ output: "bloodmagic:incensealtar" });
     event.custom({
       type: "astralsorcery:altar",
       altar_type: 1,
-      duration: 200,
-      starlight: 1000,
+      duration: 170,
+      starlight: 900,
       pattern: [
-        "F___F", 
-        "_EEE_", 
-        "_BAB_", 
-        "_CDC_", 
-        "E___E"
+        "E___E", 
+        "_D_D_", 
+        "_DAD_", 
+        "_CBC_", 
+        "F___F"
       ],
       key: {
         A: {
-          tag: "forge:ingots/copper",
+            tag: "minecraft:coals"
         },
         B: {
-          item: "astralsorcery:nocturnal_powder",
+            type: "bloodmagic:bloodorb",
+            orb_tier: 0
         },
         C: {
-          item: "botania:manasteel_ingot",
+            tag: "forge:cobblestone"
         },
         D: {
-          item: "bloodmagic:blankslate",
+            item: "botania:livingrock",
         },
         E: {
-          tag: "forge:stone",
+            tag: "botania:petals/yellow"
         },
         F: {
-          tag: "botania:petals/red",
+            item: "botania:mana_powder"
         }
       },
       output: [
         {
-          item: "bloodmagic:alchemytable",
+          item:  "bloodmagic:incensealtar",
           count: 1,
         },
       ],

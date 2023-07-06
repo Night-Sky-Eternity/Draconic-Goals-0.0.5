@@ -1,49 +1,44 @@
 onEvent("recipes", (event) => {
-    event.remove({ output: "botania:terra_plate" });
+    event.remove({ output: "bloodmagic:alchemicalreactionchamber" });
     event.custom({
       type: "astralsorcery:altar",
       altar_type: 2,
       duration: 250,
-      starlight: 3000,
+      starlight: 2000,
       pattern: [
-        "_____", 
-        "BBBBB", 
-        "_DAD_", 
-        "1C5C3", 
-        "2B_B4"
+        "JJ_JJ", 
+        "JEFEJ", 
+        "_BAB_", 
+        "JCDCJ", 
+        "JJ_JJ"
       ],
       key: {
         A: {
-          item: "botania:manasteel_block",
+            type: "bloodmagic:bloodorb",
+            orb_tier: 3
         },
         B: {
-          item: "minecraft:lapis_block",
+          item: "bloodmagic:infusedslate",
         },
         C: {
-          item: "bloodmagic:blankrune",
+          item: "botania:terrasteel_nugget",
         },
         D: {
-          item: "astralsorcery:starmetal_ingot",
+          item: "minecraft:iron_block",
         },
-        1: {
-          item: "botania:rune_water",
+        E: {
+          item: "astralsorcery:nocturnal_powder",
         },
-        2: {
-          item: "botania:rune_earth",
+        F: {
+          item: "astralsorcery:starmetal_ingot"
         },
-        3: {
-          item: "botania:rune_fire",
-        },
-        4: {
-          item: "botania:rune_air",
-        },
-        5: {
-          item: "botania:rune_mana",
-        },
+        J: {
+          tag:"forge:stone"
+        }
       },
       output: [
         {
-          item: "botania:terra_plate",
+          item: "bloodmagic:alchemicalreactionchamber" ,
           count: 1,
         },
       ],

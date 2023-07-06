@@ -1,50 +1,39 @@
 onEvent("recipes", (event) => {
-    event.remove({ output: "bloodmagic:alchemicalreactionchamber" });
+    event.remove({ output: "iceandfire:dragon_flute" });
     event.custom({
       type: "astralsorcery:altar",
       altar_type: 2,
       duration: 200,
-      starlight: 2000,
+      starlight: 2500,
       pattern: [
-        "JJ_JJ", 
-        "JEFEJ", 
-        "_BAB_", 
-        "JCDCJ", 
-        "JJ_JJ"
+        "DE_ED", 
+        "E__BE", 
+        "__B__", 
+        "EA_E", 
+        "DE_ED"
       ],
       key: {
         A: {
-            type: "bloodmagic:bloodorb",
-            orb_tier: 3
+          tag: "forge:ingots/zinc"
         },
         B: {
-          item: "bloodmagic:infusedslate",
-        },
-        C: {
-          item: "botania:terrasteel_nugget",
+          item: "iceandfire:dragonbone",
         },
         D: {
-          item: "minecraft:iron_block",
+          item: "botania:dragonstone",
         },
         E: {
-          item: "astralsorcery:nocturnal_powder",
+          tag: "astralsorcery:stardust",
         },
-        F: {
-          item: "astralsorcery:starmetal_ingot"
-        },
-        J: {
-          tag:"forge:stone"
-        }
       },
       output: [
         {
-          item: "bloodmagic:alchemicalreactionchamber" ,
+          item: "iceandfire:dragon_flute",
           count: 1,
         },
       ],
       effects: [
         "astralsorcery:built_in_effect_constellation_finish",
-        "astralsorcery:built_in_effect_trait_relay_highlight",
         "astralsorcery:built_in_effect_discovery_central_beam",
         "astralsorcery:built_in_effect_trait_focus_circle",
         "astralsorcery:focus_dust_swirl",

@@ -1,41 +1,35 @@
 onEvent("recipes", (event) => {
-    event.remove({ output: "bloodmagic:alchemytable" });
+    event.remove({ output: "botania:spark" });
     event.custom({
       type: "astralsorcery:altar",
-      altar_type: 1,
+      altar_type: 2,
       duration: 200,
       starlight: 1000,
       pattern: [
-        "F___F", 
-        "_EEE_", 
+        "CD_DC", 
+        "D_B_D", 
         "_BAB_", 
-        "_CDC_", 
-        "E___E"
+        "D_B_D", 
+        "CD_DC"
       ],
       key: {
         A: {
-          tag: "forge:ingots/copper",
+          tag: "forge:gems/aquamarine",
         },
         B: {
-          item: "astralsorcery:nocturnal_powder",
+          item: "astralsorcery:illumination_powder",
         },
         C: {
-          item: "botania:manasteel_ingot",
+            tag: "botania:petals",
         },
         D: {
-          item: "bloodmagic:blankslate",
+          item: "minecraft:blaze_powder",
         },
-        E: {
-          tag: "forge:stone",
-        },
-        F: {
-          tag: "botania:petals/red",
-        }
       },
       output: [
         {
-          item: "bloodmagic:alchemytable",
-          count: 1,
+          item: "botania:spark",
+          count: 2,
         },
       ],
       effects: [

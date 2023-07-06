@@ -1,40 +1,31 @@
 onEvent("recipes", (event) => {
-    event.remove({ output: "bloodmagic:alchemytable" });
+    event.remove({ output: "botania:lens_normal" });
     event.custom({
       type: "astralsorcery:altar",
-      altar_type: 1,
+      altar_type: 2,
       duration: 200,
-      starlight: 1000,
+      starlight: 1500,
       pattern: [
-        "F___F", 
-        "_EEE_", 
-        "_BAB_", 
-        "_CDC_", 
-        "E___E"
+        "B___B", 
+        "__C__", 
+        "_CAC_", 
+        "__C__", 
+        "B___B"
       ],
       key: {
         A: {
-          tag: "forge:ingots/copper",
+            item: "astralsorcery:glass_lens"
         },
         B: {
-          item: "astralsorcery:nocturnal_powder",
+            item: "astralsorcery:illumination_powder"
         },
         C: {
-          item: "botania:manasteel_ingot",
+            item: "botania:manasteel_ingot"
         },
-        D: {
-          item: "bloodmagic:blankslate",
-        },
-        E: {
-          tag: "forge:stone",
-        },
-        F: {
-          tag: "botania:petals/red",
-        }
       },
       output: [
         {
-          item: "bloodmagic:alchemytable",
+          item: "botania:lens_normal",
           count: 1,
         },
       ],
@@ -46,4 +37,5 @@ onEvent("recipes", (event) => {
         "astralsorcery:built_in_effect_attunement_sparkle",
       ],
     });
-})
+  });
+  

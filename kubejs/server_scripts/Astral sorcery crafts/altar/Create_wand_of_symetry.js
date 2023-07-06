@@ -1,44 +1,46 @@
 onEvent("recipes", (event) => {
-    event.remove({ output: "iceandfire:dragon_flute" });
+    event.remove({ output: "create:wand_of_symmetry" });
     event.custom({
       type: "astralsorcery:altar",
       altar_type: 2,
       duration: 200,
-      starlight: 2500,
+      starlight: 500,
       pattern: [
-        "DE_ED", 
-        "E__BE", 
-        "__B__", 
-        "EA_E", 
-        "DE_ED"
+        "F__DE", 
+        "__DED", 
+        "_DAD_", 
+        "ACD__", 
+        "BA__F"
       ],
       key: {
         A: {
-          item: "botania:terrasteel_ingot"
+            tag: "forge:ingots/brass"
         },
         B: {
-          item: "iceandfire:dragonbone",
+            item: "iceandfire:witherbone"
+        },
+        C: {
+            item: "minecraft:obsidian"
         },
         D: {
-          item: "botania:dragonstone",
+            tag: "forge:rods/wooden"
         },
         E: {
-          tag: "astralsorcery:stardust",
+            item: "astralsorcery:glass_lens"
         },
+        F: {
+            item: "astralsorcery:illumination_powder"
+        }
       },
       output: [
         {
-          item: "iceandfire:dragon_flute",
+          item: "create:wand_of_symmetry",
           count: 1,
         },
       ],
       effects: [
         "astralsorcery:built_in_effect_constellation_finish",
         "astralsorcery:built_in_effect_discovery_central_beam",
-        "astralsorcery:built_in_effect_trait_focus_circle",
-        "astralsorcery:focus_dust_swirl",
-        "astralsorcery:focus_edge",
-        "astralsorcery:altar_focus_sparkle",
         "astralsorcery:altar_default_sparkle",
         "astralsorcery:built_in_effect_constellation_lines",
         "astralsorcery:built_in_effect_attunement_sparkle",

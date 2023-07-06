@@ -1,41 +1,32 @@
 onEvent("recipes", (event) => {
-    event.remove({ output: "bloodmagic:alchemytable" });
+    event.remove({ output: "bloodmagic:slate_vial" });
     event.custom({
       type: "astralsorcery:altar",
       altar_type: 1,
       duration: 200,
       starlight: 1000,
       pattern: [
-        "F___F", 
-        "_EEE_", 
-        "_BAB_", 
-        "_CDC_", 
-        "E___E"
+        "____A", 
+        "___B_", 
+        "__B__", 
+        "_B___", 
+        "C____"
       ],
       key: {
         A: {
-          tag: "forge:ingots/copper",
+          item: "bloodmagic:blankslate"
         },
         B: {
-          item: "astralsorcery:nocturnal_powder",
+          tag: "forge:glass",
         },
         C: {
-          item: "botania:manasteel_ingot",
+          item: "astralsorcery:illumination_powder",
         },
-        D: {
-          item: "bloodmagic:blankslate",
-        },
-        E: {
-          tag: "forge:stone",
-        },
-        F: {
-          tag: "botania:petals/red",
-        }
       },
       output: [
         {
-          item: "bloodmagic:alchemytable",
-          count: 1,
+          item:  "bloodmagic:slate_vial",
+          count: 8,
         },
       ],
       effects: [

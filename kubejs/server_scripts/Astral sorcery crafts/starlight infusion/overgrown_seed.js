@@ -3,7 +3,7 @@ onEvent("recipes", (event) => {
       type: "astralsorcery:infuser",
       fluidInput: "astralsorcery:liquid_starlight",
       input: {
-        item: "botania:world_seed"
+        item: "botania:grass_seeds"
       },
       output: {
         item: "botania:overgrowth_seed",

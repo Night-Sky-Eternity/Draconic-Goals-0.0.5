@@ -1,41 +1,35 @@
 onEvent("recipes", (event) => {
-    event.remove({ output: "bloodmagic:alchemytable" });
+    event.remove({ output: "botania:elven_spreader" });
     event.custom({
       type: "astralsorcery:altar",
-      altar_type: 1,
-      duration: 200,
-      starlight: 1000,
+      altar_type: 2,
+      duration: 230,
+      starlight: 2200,
       pattern: [
-        "F___F", 
-        "_EEE_", 
-        "_BAB_", 
-        "_CDC_", 
-        "E___E"
+        "DD_DD", 
+        "DDCDD", 
+        "_BA__", 
+        "DDCDD", 
+        "DD_DD"
       ],
       key: {
         A: {
-          tag: "forge:ingots/copper",
+          item: "astralsorcery:resonating_gem",
         },
         B: {
-          item: "astralsorcery:nocturnal_powder",
+          item: "botania:elementium_ingot",
         },
         C: {
-          item: "botania:manasteel_ingot",
+          item: "botania:glimmering_dreamwood",
         },
         D: {
-          item: "bloodmagic:blankslate",
+          item: "botania:dreamwood",
         },
-        E: {
-          tag: "forge:stone",
-        },
-        F: {
-          tag: "botania:petals/red",
-        }
       },
       output: [
         {
-          item: "bloodmagic:alchemytable",
-          count: 1,
+          item: "botania:elven_spreader",
+          count: 3,
         },
       ],
       effects: [

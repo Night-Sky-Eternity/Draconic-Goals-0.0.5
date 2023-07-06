@@ -3,7 +3,7 @@ onEvent("recipes", (event) => {
     event.custom({
       type: "astralsorcery:altar",
       altar_type: 2,
-      duration: 200,
+      duration: 210,
       starlight: 3000,
       pattern: [
         "FG_GF", 

@@ -30,7 +30,7 @@ onEvent("recipes", (event) => {
             item: "botania:elementium_ingot",
           },
           E: {
-            item: "botania:terrasteel_ingot",
+            item: "minecraft:netherite_ingot",
           },
         },
         output: [
